@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Entender como funciona o JavaScript, Aprender a programar usando, Desenvolver página -->
+<!--Linguagem de script que permite ser executada em tempo real e multiplanara pode ser executada em plataformas diferentes -->
+<!--Cliente Side - É executado do lado do cliente (usuario) -->
+<!--Tem capacidade de interagir com elementos de uma página HTML - graças ao DOM(Documente Objecto Model) (Elementos de Arvore)Javascript pode alterar todos elementos HTML e todos os atributos e estilos de CSS de uma página-->
+<!--Muito usado no desenvolvimento de paginas e aplicativos mobile hibridos-->
+<!-- JavaScript página dinamica-->
+<!-- -->
+<!-- -->
+
+<hmtl lang="pt-br">
+    <head>
+
+        <title> Minha página</title> <!-- onload é usado no elemento <body> para executar um script depois que uma página da Web carrega completamente todo o conteúdo (incluindo imagens, arquivos de script, arquivos CSS, etc.).-->
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script> <!--Linkar javascript "esta em outro local" --> 
+    </head>
+    <body onload="load()">
+        <!-- <h1>Minha página</h1> -->
+        <button type="button" onclick="clicou()">Clique Aqui</button> <!-- onclick ocorre quando o usuário clica em um elemento-->
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mouseemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>   <!--onmouseover ocorre quando o ponteiro do mouse é movido para um elemento ou para um de seus filhos.-->
+        <p id="mouseemov2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p> <!--onmouseout ocorre quando o ponteiro do mouse é movido para fora de um elemento ou de um de seus filhos.-->
+        <p id="mouseemov3" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p> 
+    <select onchange="funcaochange(this)"> <!-- <select> é usado para criar uma lista suspensa.-->
+        <!-- O evento onchange ocorre quando o valor de um elemento foi alterado. Para botões de opção e caixas de seleção, o evento onchange ocorre quando o estado verificado é alterado.-->
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    </body>
+</hmtl>
